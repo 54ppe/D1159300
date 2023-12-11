@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    {% extends "master.html" %}
+
+{% block title %}
+  Details about {{ court.name }} 
+{% endblock %}
+
+
+{% block content %}
+  <h1>Name : {{ court.name }}</h1>
+  <p>Floor: {{ court.floor }}</p>
+  <p>City : {{ court.city }}</p>
+  
+  
+  <p>Back to <a href="/courts">Courts</a></p>
+  
+{% endblock %}
+</body>
+</html>
